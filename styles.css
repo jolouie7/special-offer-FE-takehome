@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/spical-offer-Asset.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1e1e1e;
+  z-index: -1; /* Push the image behind other content */
+}
+
+.container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.form {
+  max-width: 762px;
+}
+
+.input-button {
+  border: 2px solid #3d3d3d;
+  background-color: #000000;
+  border-radius: 1rem;
+  padding: 8px;
+  width: 40%;
+  height: 46px;
+}
+
+.input-button-success {
+  border: 2px solid #129a14;
+  background-color: #000000;
+  border-radius: 1rem;
+  padding: 8px;
+  width: 100%;
+  height: 46px;
+}
+
+::placeholder {
+  color: #ffffff;
+}
+
+.disclaimer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 0.5rem;
+}
+
+.cta-button {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  width: 343px;
+  height: 56px;
+  margin-top: 3rem;
+}
