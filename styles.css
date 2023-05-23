@@ -3,6 +3,7 @@
   font-family: "SF-Pro-Display-Regular";
   src: url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
     url("fonts/SFProDisplay-Regular.woff") format("woff");
+    font-display: swap;
 }
 
 /* CSS variables */
@@ -96,7 +97,7 @@ form {
 }
 
 .disclaimer {
-  font-weight: 700;
+  font-weight: 700;›
   font-size: 14px;
   line-height: 20px;
   margin-top: 0.5rem;
