@@ -1,8 +1,22 @@
+/* Fonts */
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("fonts/SFProDisplay-Regular.woff") format("woff");
+}
+
+/* CSS variables */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "SF-Pro-Display-Regular", sans-serif;
 }
 
 .background-image {
@@ -20,15 +34,12 @@ body {
 }
 
 .container {
-  color: #ffffff;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-.content {
 }
 
 h1 {
@@ -56,25 +67,32 @@ form {
 
 .input-items input {
   border: 2px solid #3d3d3d;
-  background-color: #000000;
+  background-color: var(--primary-color);
   border-radius: 1rem;
   padding-left: 16px;
   height: 56px;
   width: 50%;
+  color: #ffffff;
 }
 
 .input-success {
   border: 2px solid #129a14;
-  background-color: #000000;
+  background-color: var(--primary-color);
   border-radius: 1rem;
   padding-left: 16px;
   height: 56px;
   width: calc(100% - 20px);
   margin-top: 12px;
+  color: var(--secondary-color);
 }
 
 ::placeholder {
-  color: #ffffff;
+  color: var(--secondary-color);
+}
+
+.input-items input:hover,
+.input-success:hover {
+  border-color: var(--secondary-color);
 }
 
 .disclaimer {
@@ -85,10 +103,19 @@ form {
 }
 
 .cta-button {
+  font-family: "SF Pro Display";
+  font-style: normal;
   padding: 16px;
-  background: #ffffff;
+  background: var(--secondary-color);
   border-radius: 16px;
   width: 343px;
   height: 56px;
   margin-top: 3rem;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid;
+  color: var(--secondary-color);
+  cursor: pointer;
 }
