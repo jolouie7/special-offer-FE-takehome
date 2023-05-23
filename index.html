@@ -20,24 +20,39 @@
           towards an early alpha launch in Q2 2023.
         </p>
         <p>Reserve your handle, share this page and follow us.</p>
-        <form action="submit">
+        <form name="form" action="submit" method="post">
           <div class="input-items">
-            <input name="name" type="text" placeholder="Name" />
-            <input name="email" type="text" placeholder="Email" />
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              minlength="3"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              minlength="3"
+              required
+            />
           </div>
           <input
             class="input-success"
             name="handle"
             type="text"
             placeholder="Handle"
+            minlength="3"
+            required
           />
+          <div class="disclaimer">
+            By entering the above information you are agreeing to receive <br />
+            emails from or on behalf of SPECIAL OFFER.
+          </div>
+          <button class="cta-button" type="submit">Submit</button>
         </form>
-        <div class="disclaimer">
-          By entering the above information you are agreeing to receive <br />
-          emails from or on behalf of SPECIAL OFFER.
-        </div>
-        <button class="cta-button" type="submit">Submit</button>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
