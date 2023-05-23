@@ -103,7 +103,7 @@ form {
 }
 
 .cta-button {
-  font-family: "SF Pro Display";
+  font-family: "SF-Pro-Display-Regular", sans-serif;
   font-style: normal;
   padding: 16px;
   background: var(--secondary-color);
@@ -118,4 +118,17 @@ form {
   border: var(--primary-color) solid;
   color: var(--secondary-color);
   cursor: pointer;
+}
+
+/* At 400 and below px apply below styles */
+@media (max-width: 400px) {
+  .container {
+    margin-top: 2rem;
+  }
+
+  .cta-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
