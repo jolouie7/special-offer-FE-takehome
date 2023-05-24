@@ -3,7 +3,7 @@
   font-family: "SF-Pro-Display-Regular";
   src: url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
     url("fonts/SFProDisplay-Regular.woff") format("woff");
-    font-display: swap;
+  font-display: swap;
 }
 
 /* CSS variables */
@@ -51,7 +51,7 @@ h1 {
 
 p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   line-height: 100%;
 }
 
@@ -70,8 +70,8 @@ form {
   border: 2px solid #3d3d3d;
   background-color: var(--primary-color);
   border-radius: 1rem;
-  padding-left: 16px;
-  height: 56px;
+  padding-left: 1rem;
+  height: 3.5rem; /* 56px */
   width: 50%;
   color: #ffffff;
 }
@@ -81,9 +81,9 @@ form {
   background-color: var(--primary-color);
   border-radius: 1rem;
   padding-left: 16px;
-  height: 56px;
+  height: 3.5rem; /* 56px */
   width: calc(100% - 20px);
-  margin-top: 12px;
+  margin-top: 0.75rem; /* 12px */
   color: var(--secondary-color);
 }
 
@@ -97,18 +97,18 @@ form {
 }
 
 .disclaimer {
-  font-weight: 700;›
+  font-weight: 700;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.25rem; /* 20px */
   margin-top: 0.5rem;
 }
 
 .cta-button {
   font-family: "SF-Pro-Display-Regular", sans-serif;
   font-style: normal;
-  padding: 16px;
+  padding: 1rem;
   background: var(--secondary-color);
-  border-radius: 16px;
+  border-radius: 1rem;
   width: 343px;
   margin-top: 3rem;
 }
